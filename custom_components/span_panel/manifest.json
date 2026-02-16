@@ -1,0 +1,11 @@
+{
+  "domain": "span_panel",
+  "name": "Span MAIN 40",
+  "codeowners": ["@griswoldlabs"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/griswoldlabs/span-panel-ha",
+  "iot_class": "local_push",
+  "requirements": ["grpcio>=1.60.0", "protobuf>=4.21.0"],
+  "version": "0.1.0"
+}

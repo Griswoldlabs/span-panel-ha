@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Span MAIN 40",
+        "description": "Enter the IP address of your Span MAIN 40 panel.",
+        "data": {
+          "host": "IP Address",
+          "port": "gRPC Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the panel. Check the IP address and ensure the panel is on the same network.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This panel is already configured."
+    }
+  }
+}
