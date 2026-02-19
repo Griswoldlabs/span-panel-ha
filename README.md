@@ -5,6 +5,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/Griswoldlabs/span-panel-ha)](https://github.com/Griswoldlabs/span-panel-ha/releases)
 [![License: MIT](https://img.shields.io/github/license/Griswoldlabs/span-panel-ha)](LICENSE)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/griswoldlabs)
 
 **The first Home Assistant integration for the Span MAIN 40 (Gen3) smart electrical panel.**
 
@@ -100,8 +101,17 @@ The panel's gRPC service runs on port **50065** with no authentication. Ensure y
 | Panel Model | Supported | Notes |
 |-------------|-----------|-------|
 | Span MAIN 40 (Gen3) | **Yes** | Full support via gRPC |
+| Span MLO 48 (Gen3) | **Yes** | Confirmed working by community testers |
+| Span 48 | **Yes** | Confirmed working by community testers |
 | Span MAIN 32 (Gen2 and earlier) | No | Use [SpanPanel/span](https://github.com/SpanPanel/span) instead |
-| Span MLO 48 | Unknown | May work if it uses the same gRPC protocol — testers welcome |
+
+## Support This Project
+
+If this integration is useful to you, consider supporting development:
+
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/griswoldlabs)
+
+Your support helps fund hardware for testing across different panel models and keeps development active.
 
 ## Troubleshooting
 
@@ -118,13 +128,14 @@ The panel's gRPC service runs on port **50065** with no authentication. Ensure y
 - [x] Breaker state detection
 - [x] Dual-phase (240V) circuit support
 - [x] Config flow UI setup
+- [x] MLO 48 compatibility (confirmed by community)
 - [ ] Energy dashboard integration (Riemann sum sensors)
 - [ ] Circuit control (on/off) — pending gRPC command discovery
-- [ ] MLO 48 compatibility testing
+- [ ] Upstream merge into [SpanPanel/span](https://github.com/SpanPanel/span) (in progress)
 
 ## Contributing
 
-Contributions are welcome! If you have a Gen3 panel and can help test, please open an issue with your panel details. If you have an MLO 48, we'd especially love to hear from you.
+Contributions are welcome! If you have a Gen3 panel and can help test, please open an issue with your panel details.
 
 ## License
 
